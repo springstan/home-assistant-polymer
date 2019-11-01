@@ -170,7 +170,12 @@ class HUIRoot extends LitElement {
                   ${this._conversation(this.hass.config.components)
                     ? html`
                         <paper-icon-button
-                          aria-label="Start conversation"
+                          aria-label="${this.hass.localize(
+                            "ui.dialogs.voice_command.start_conversation"
+                          )}"
+                          title="${this.hass.localize(
+                            "ui.dialogs.voice_command.start_conversation"
+                          )}"
                           icon="hass:microphone"
                           @click=${this._showVoiceCommandDialog}
                         ></paper-icon-button>
@@ -182,6 +187,12 @@ class HUIRoot extends LitElement {
                     horizontal-offset="-5"
                   >
                     <paper-icon-button
+                      aria-label=${this.hass!.localize(
+                        "ui.panel.lovelace.menu.open"
+                      )}
+                      title="${this.hass!.localize(
+                        "ui.panel.lovelace.menu.open"
+                      )}"
                       icon="hass:dots-vertical"
                       slot="dropdown-trigger"
                     ></paper-icon-button>

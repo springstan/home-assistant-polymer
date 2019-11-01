@@ -555,6 +555,7 @@
     },
     "dialogs": {
       "voice_command": {
+        "start_conversation": "Start conversation",
         "did_not_hear": "Home Assistant did not hear anything",
         "how_can_i_help": "How can I help?",
         "label": "Type a question and press <Enter>",
@@ -576,12 +577,15 @@
         },
         "updater": {
           "title": "Update Instructions"
-        }
+        },
+        "close": "Dismiss dialog"
       },
       "more_info_settings": {
         "save": "Save",
         "name": "Name Override",
-        "entity_id": "Entity ID"
+        "entity_id": "Entity ID",
+        "open": "Open more info settings",
+        "go_back": "Go back"
       },
       "options_flow": {
         "form": {
@@ -635,7 +639,8 @@
     "notification_drawer": {
       "click_to_configure": "Click button to configure {entity}",
       "empty": "No Notifications",
-      "title": "Notifications"
+      "title": "Notifications",
+      "close": "Close notification drawer"
     },
     "notification_toast": {
       "service_call_failed": "Failed to call service {service}.",
@@ -1413,6 +1418,7 @@
           "existing_cards": "You can't delete a view that has cards in it. Remove the cards first."
         },
         "menu": {
+          "open": "Open Configure UI menu",
           "configure_ui": "Configure UI",
           "unused_entities": "Unused entities",
           "help": "Help",
